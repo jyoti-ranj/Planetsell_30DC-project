@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+       <header>
+            <div id="header">
+              <div class="header-logo">
+                <a href="#"><img src="images/logo2.png" alt=""/></a>
+              </div>
+              <div class="header-list">
+                <nav class="header-list-nav">
+                  <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contacts</a></li>
+                  </ul>
+                </nav>
+                <div class="header-list-icon">
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+              </div>
+            </div>
+          </header>
+    <main>
+         <section id="hero">
+            <p><b>Hello,</b></p>
+            <h1>I'am <b>Jyoti Ranjan</b></h1>
+            <h2>UI/UX Developer</h2>
+            <p>From Odisha</p>
+            <button onclick="document.getElementById('contact_me').scrollIntoView({ behavior: 'smooth' });">Hire Me</button>
+         </section>
+
+         <section>
+            <div id="contact_me">
+                <h1>Contact Me</h1>
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <br>
+                    <br>
+                    <input type="email" placeholder="Your Email">
+                    <br>
+                    <br>
+                    <textarea name="" id="Message" cols="30" placeholder="Your Message"></textarea>
+                    <br>
+                    <br>
+                    <button>Send</button>
+                </form>
+            </div>
+         </section> 
+
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div class="content">
+                <h1>Catch Me Here</h1>
+                <p>As a passionate UI/UX Developer, I specialize in crafting visually engaging and user-friendly digital experiences. My journey in design and development has been driven by a commitment to understanding user needs and delivering solutions that enhance usability. I thrive on collaborating with diverse teams to bring creative ideas to life, blending aesthetics with functionality. Whether it’s a freelance project or a collaboration, I’m always eager to connect with fellow creators and innovators. Let's work together to create something remarkable!</p>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="Images/logo2.png" alt="Logo"></a>
+            </div>
+        </div>
+        <div class="socials">
+            <div><a href="https://www.linkedin.com/in/jyoti-ranjan-sethi-355a84205/">
+                <i class="fab fa-linkedin"></i>
+            </a></div>
+            <div><a href="http://github.com/jyoti-ranj">
+                <i class="fab fa-github"></i>
+            </a></div>
+            <div><a href="http://x.com/grin_with_heart?t=vsps9GajT_WVq-FwXeF1Ag&s=09">
+                <i class="fab fa-twitter"></i>
+            </a></div>
+            <div><a href="http://www.facebook.com/joytiranjan.sethi.3?mibextid=ZbWKwL">
+                <i class="fab fa-facebook"></i>
+            </a></div>
+            <div><a href="http://www.instagram.com/jyoti_ranjan15?igsh=cnhlemZ6eGVtcXR4">
+                <i class="fab fa-instagram"></i>
+            </a></div>
+            <div><a href="http://discord.com/channels/@me/1218420780833050696">
+                <i class="fab fa-discord"></i>
+            </a></div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> Jyoti Ranjan Sethi. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+    <script>
+         document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
